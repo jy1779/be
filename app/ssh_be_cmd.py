@@ -1,5 +1,6 @@
 import paramiko
 import threading
+import datetime
 class MyThread(threading.Thread):
     def __init__(self,ip,port,username,password,cmd):
         self.ssh = paramiko.SSHClient()
@@ -16,6 +17,12 @@ class MyThread(threading.Thread):
         stdin, stdout, stderr = self.ssh.exec_command(self.cmd)
         res, err = stdout.read(), stderr.read()
         result = res if res else err
+        f = open("../logs/becmd.log",'a')
+        f.write(str(datetime.datetime.now())+" ")
+        f.write(self.ip+" ")
+        f.write(self.username+ " ")
+        f.write(self.cmd+ "\n")
+        f.close()
         print(self.ip.rjust(50,'='),"command result:".ljust(50,'='))
         print(result.decode())
         self.ssh.close()
