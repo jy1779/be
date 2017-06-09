@@ -4,11 +4,11 @@ account = {
         "port":"22",
         "username":"root",
         "password":"123456"
-    }
-    # "192.168.0.65": {
-    #     "ip": "192.168.0.65",
-    #     "port": "22",
-    #     "username": "root",
-    #     "password": "123456"
-    # }
+    },
+     "192.168.1.75":{
+         "ip": "192.168.1.75",
+         "port": "22",
+         "username": "root",
+         "password": "123456"
+     }
 }

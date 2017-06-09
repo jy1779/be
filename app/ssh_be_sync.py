@@ -33,7 +33,7 @@ class MyThread(threading.Thread):
                     print("Create a new directory: ", item)
                     self.sftp.mkdir(item)
         def besync_log():
-            f = open("../logs/besync.log",'a')
+            f = open("/root/be/logs/besync.log",'a')
             for i in str(datetime.datetime.now())+" ",self.ip+" ",self.username+ " ",self.cmd[0]+" ",self.cmd[1]+" ",src+" ",des+ "\n":
                 f.write(i)
             f.close()

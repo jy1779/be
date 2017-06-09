@@ -1,0 +1,8 @@
+2017-06-09 10:28:43.840483 192.168.1.57 root /usr/local/sbin/besync -f /tmp/nginx_800.tar /tmp/be
+2017-06-09 10:28:43.844895 192.168.1.75 root /usr/local/sbin/besync -f /tmp/nginx_800.tar /tmp/be
+2017-06-09 10:31:05.268619 192.168.1.75 root /usr/local/sbin/besync -f /tmp/test /tmp/test
+2017-06-09 10:31:05.269175 192.168.1.57 root /usr/local/sbin/besync -f /tmp/test /tmp/test
+2017-06-09 10:46:47.263298 192.168.1.57 root /usr/local/sbin/besync -f /tmp/test /tmp/jonny
+2017-06-09 10:46:47.268205 192.168.1.75 root /usr/local/sbin/besync -f /tmp/test /tmp/jonny
+2017-06-09 10:48:52.687642 192.168.1.57 root /usr/local/sbin/besync -d /tmp/project_code /tmp
+2017-06-09 10:48:52.692691 192.168.1.75 root /usr/local/sbin/besync -d /tmp/project_code /tmp

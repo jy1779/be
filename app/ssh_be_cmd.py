@@ -17,13 +17,13 @@ class MyThread(threading.Thread):
         stdin, stdout, stderr = self.ssh.exec_command(self.cmd)
         res, err = stdout.read(), stderr.read()
         result = res if res else err
-        f = open("../logs/becmd.log",'a')
+        f = open("/root/be/logs/becmd.log",'a')
         f.write(str(datetime.datetime.now())+" ")
         f.write(self.ip+" ")
         f.write(self.username+ " ")
         f.write(self.cmd+ "\n")
         f.close()
-        print(self.ip.rjust(50,'='),"command result:".ljust(50,'='))
+        print("\033[1;32;40m" + self.ip.rjust(33,'=')+ "\033[0m","\033[1;32;40m" + "Command result: ".ljust(37,'=')+ "\033[0m")
         print(result.decode())
         self.ssh.close()
 
